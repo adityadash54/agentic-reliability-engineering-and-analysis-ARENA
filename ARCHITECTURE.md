@@ -7,6 +7,22 @@ acting as the analytical reasoning layer through a structured tool-use loop.
 
 ---
 
+## Table of contents
+
+1. [Project overview and motivation](#project-overview-and-motivation)
+2. [Statistical and algorithmic foundations](#statistical-and-algorithmic-foundations)
+3. [System architecture](#system-architecture)
+4. [Agent design and tool-use workflow](#agent-design-and-tool-use-workflow)
+5. [Data flow and session lifecycle](#data-flow-and-session-lifecycle)
+6. [Schema detection and column safety](#schema-detection-and-column-safety)
+7. [Privacy and security controls](#privacy-and-security-controls)
+8. [User interface design](#user-interface-design)
+9. [Deployment approach](#deployment-approach)
+10. [Trade-offs and design decisions](#trade-offs-and-design-decisions)
+11. [Extensibility and future directions](#extensibility-and-future-directions)
+
+---
+
 ## Project overview and motivation
 
 Reliability engineering is a quantitative discipline concerned with the
@@ -150,6 +166,23 @@ layer, and the Streamlit application layer. The separation is deliberate
 and follows a pure-function discipline that keeps each layer independently
 testable and reusable.
 
+```
+┌─────────────────────────────────────────────┐
+│              app.py  (Streamlit UI)          │
+│  session state · data validation · security  │
+└────────────────────┬────────────────────────┘
+                     │ uses
+┌────────────────────▼────────────────────────┐
+│             agent.py  (Agent layer)          │
+│  tool definitions · tool-use loop · history  │
+└──────────┬─────────────────────┬────────────┘
+           │ calls               │ calls
+┌──────────▼──────────┐   ┌──────▼───────────┐
+│ reliability_engine  │   │  Anthropic API   │
+│   (pure functions)  │   │  (Claude model)  │
+└─────────────────────┘   └──────────────────┘
+```
+
 The statistical engine contains only pure functions that accept arrays and
 DataFrames and return dicts or DataFrames. It has no knowledge of the UI,
 the agent, or the language model. This means the engine can be called from
@@ -184,8 +217,8 @@ potential version conflicts with the other packages.
 The chosen stack boots quickly on Streamlit Community Cloud and on minimal
 cloud instances. The trade-off is that confidence intervals are not
 computed for Weibull estimates, and the KM estimator does not produce
-Greenwood standard errors. The intended use case is to enable conversational
-exploratory analysis and more complexity can be added later to expand on the functionalities.
+Greenwood standard errors. The intended use case is conversational exploratory
+analysis; statistical completeness can be layered on incrementally as needed.
 
 ---
 
@@ -246,16 +279,23 @@ language description, and an input schema in JSON Schema format. The
 description is the primary signal the model uses to decide which tool to
 call; it should be precise about what the tool computes and what it returns.
 
-The tools are: fit Weibull (overall or by group), Kaplan-Meier (overall or
-by group), fit AFT model (with covariates), DOE main-effects analysis,
-B-life table, dataset summary, and failure mode breakdown. This set covers
-the core reliability analysis workflow from exploratory summary through
+| Tool | Purpose |
+|---|---|
+| `dataset_summary` | Row count, failure rate, time range, column overview |
+| `fit_weibull` | MLE Weibull fit — overall or stratified by group |
+| `kaplan_meier` | Non-parametric survival curve — overall or by group |
+| `fit_aft` | Weibull AFT model with continuous stress covariates |
+| `doe_analysis` | OLS main-effects analysis for binary experimental factors |
+| `blife_table` | B5 / B10 / B20 / B50 estimates per group |
+| `failure_breakdown` | Failure count and rate by categorical column |
+
+This set covers the core reliability workflow from exploratory summary through
 parametric modelling through design risk interpretation.
 
-The dataset summary tool is intentionally first in the list because it is
-often the right first call when a user asks a broad question like "summarise
-this dataset." The model learns this ordering through both the tool
-descriptions and the system prompt instruction to use computed numbers.
+`dataset_summary` is intentionally first in the list because it is often the
+right first call when a user asks a broad question like "summarise this dataset."
+The model learns this ordering through both the tool descriptions and the system
+prompt instruction to use computed numbers.
 
 ### Tool executor and column validation
 
@@ -559,13 +599,9 @@ log-scale parameters. Propagating these through the B-life formula using
 the delta method would yield approximate confidence intervals on B10 and
 B50.
 
-In summary, ARENA demonstrates that a compact, well-separated Python
-stack — a pure statistics engine, a structured tool-use agent, and a
-Streamlit front end — can deliver a capable, conversational reliability
-analysis platform that is easy to deploy, easy to audit, and easy to extend.
 The design prioritizes correctness of the statistical foundations,
 transparency of the privacy controls, and simplicity of the operational
-model — producing a system that a reliability engineer can trust for
-exploratory analysis, a developer can understand and extend in a single
-session, and an organization can adopt without the cost or operational
-burden of traditional reliability software.
+model. Each layer — pure statistics engine, structured tool-use agent,
+Streamlit front end — is independently replaceable, making the system
+straightforward to audit, extend, and redeploy without the cost or
+operational burden of traditional reliability software.

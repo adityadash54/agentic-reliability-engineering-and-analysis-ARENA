@@ -1,8 +1,19 @@
 # ARENA — Agentic Reliability Engineering & Analysis
 
-An agentic AI chat interface for reliability engineering analysis — Weibull fitting, Kaplan-Meier survival curves, AFT stress modelling, DOE effects, and B-life estimation.
+An agentic AI assistant for reliability engineering — Weibull fitting, Kaplan-Meier survival curves, AFT stress modelling, DOE analysis, and B-life estimation.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://YOUR-APP-NAME.streamlit.app)
+---
+
+## What it does
+
+Upload a failure-event CSV, enter your Anthropic API key, and ask reliability questions in plain English. The agent selects and runs the appropriate statistical analysis, then explains the results.
+
+**Example questions you can ask:**
+- "Fit a Weibull distribution and give me B10 life."
+- "Plot a Kaplan-Meier survival curve grouped by test condition."
+- "Which stress factors significantly affect time-to-failure?"
+- "Run a DOE analysis and rank the main effects."
+- "What is the B5 life at 85 °C using the Arrhenius model?"
 
 ---
 
@@ -24,12 +35,14 @@ An agentic AI chat interface for reliability engineering analysis — Weibull fi
 
 ## Run locally
 
+**Requirements:** Python 3.10+, an [Anthropic API key](https://console.anthropic.com/)
+
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Paste your Anthropic API key into the sidebar for that session.
+Paste your Anthropic API key into the sidebar when the app opens.
 
 ---
 
@@ -53,9 +66,11 @@ Paste your Anthropic API key into the sidebar for that session.
 ├── requirements.txt        ← Dependencies
 ├── data/                   ← Bundled sample datasets
 │   ├── battery_cell_events.csv
+│   ├── battery_degradation_curves.csv
 │   ├── bearing_wear_events.csv
 │   ├── semiconductor_burnin_events.csv
 │   ├── led_events.csv
+│   ├── led_lumen_degradation_curves.csv
 │   └── field_warranty_returns.csv
 └── .gitignore
 ```
@@ -75,24 +90,32 @@ This repo is configured for bring-your-own-key usage. It does not support silent
 
 ---
 
+## Sample datasets included
+
+| Dataset | Domain | Failure regime |
+|---|---|---|
+| Battery cell events | Energy storage | Wear-out (β ≈ 2.1–2.5) |
+| Battery degradation curves | Energy storage | Capacity fade over cycles |
+| Bearing wear events | Rotating machinery | Wear-out (β = 2.8) |
+| Semiconductor burn-in | Electronics | Infant mortality (β = 0.65) |
+| LED lumen events | Photonics | L70 degradation threshold |
+| LED lumen degradation curves | Photonics | Lumen maintenance over time |
+| Field warranty returns | Fleet / warranty | Mixed usage profiles |
+
+---
+
 ## Automated security checks
 
 GitHub Actions runs `pip-audit` and `bandit` on pushes to `main` and on pull requests via [.github/workflows/security.yml](.github/workflows/security.yml).
 
 ---
 
-## Sample datasets included
-
-| Dataset | Domain | Failure regime |
-|---|---|---|
-| Battery cell events | Energy storage | Wear-out (β ≈ 2.1–2.5) |
-| Bearing wear events | Rotating machinery | Wear-out (β = 2.8) |
-| Semiconductor burn-in | Electronics | Infant mortality (β = 0.65) |
-| LED lumen events | Photonics | L70 degradation threshold |
-| Field warranty returns | Fleet / warranty | Mixed usage profiles |
-
----
-
 ## Architecture & design
 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for statistical foundations, agent design, session lifecycle, privacy model, and architectural trade-offs.
+
+---
+
+## License
+
+Apache 2.0 — see [LICENSE](LICENSE) for details.
