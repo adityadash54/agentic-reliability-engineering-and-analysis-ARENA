@@ -1,0 +1,501 @@
+unit_id,production_date,region,usage_profile,operating_hours,warranty_return,failure_mode,ambient_temp_avg_C,cycles_per_day
+UNIT_0001,2022-01-01,Asia Pacific,moderate,2000.0,0,no_failure,27.9,2.3
+UNIT_0002,2022-01-01,Europe,heavy,2000.0,0,no_failure,27.1,2.0
+UNIT_0003,2022-01-01,North America,light,2000.0,0,no_failure,17.9,3.2
+UNIT_0004,2022-01-01,Europe,light,1294.1,1,capacity_fade,35.8,3.0
+UNIT_0005,2022-01-01,North America,light,555.1,1,capacity_fade,32.6,2.0
+UNIT_0006,2022-01-01,Europe,moderate,2000.0,0,no_failure,25.6,1.2
+UNIT_0007,2022-01-01,Europe,heavy,2000.0,0,no_failure,17.4,2.3
+UNIT_0008,2022-01-01,Asia Pacific,light,2000.0,0,no_failure,16.1,1.0
+UNIT_0009,2022-01-02,North America,moderate,2000.0,0,no_failure,19.1,1.5
+UNIT_0010,2022-01-02,North America,moderate,1815.3,1,thermal_issue,25.2,3.8
+UNIT_0011,2022-01-02,Europe,moderate,2000.0,0,no_failure,27.2,2.8
+UNIT_0012,2022-01-02,North America,moderate,986.2,1,unknown,37.0,1.5
+UNIT_0013,2022-01-02,North America,heavy,2000.0,0,no_failure,19.6,2.4
+UNIT_0014,2022-01-02,North America,light,2000.0,0,no_failure,36.6,1.7
+UNIT_0015,2022-01-02,Europe,light,2000.0,0,no_failure,31.5,1.3
+UNIT_0016,2022-01-02,North America,moderate,2000.0,0,no_failure,30.1,3.2
+UNIT_0017,2022-01-03,Europe,moderate,2000.0,0,no_failure,15.9,1.2
+UNIT_0018,2022-01-03,Asia Pacific,moderate,1862.0,1,capacity_fade,25.4,3.6
+UNIT_0019,2022-01-03,Europe,light,2000.0,0,no_failure,30.4,1.8
+UNIT_0020,2022-01-03,North America,light,2000.0,0,no_failure,34.2,2.8
+UNIT_0021,2022-01-03,North America,heavy,1775.3,1,unknown,26.5,1.2
+UNIT_0022,2022-01-03,North America,light,2000.0,0,no_failure,30.5,1.8
+UNIT_0023,2022-01-03,Europe,moderate,2000.0,0,no_failure,27.3,2.1
+UNIT_0024,2022-01-03,Europe,moderate,2000.0,0,no_failure,25.6,2.0
+UNIT_0025,2022-01-04,North America,light,2000.0,0,no_failure,23.3,1.9
+UNIT_0026,2022-01-04,North America,light,2000.0,0,no_failure,28.5,1.0
+UNIT_0027,2022-01-04,North America,moderate,2000.0,0,no_failure,27.9,1.4
+UNIT_0028,2022-01-04,North America,moderate,2000.0,0,no_failure,30.9,1.6
+UNIT_0029,2022-01-04,Latin America,light,2000.0,0,no_failure,26.3,0.8
+UNIT_0030,2022-01-04,North America,moderate,2000.0,0,no_failure,31.7,2.7
+UNIT_0031,2022-01-04,North America,light,2000.0,0,no_failure,36.8,0.9
+UNIT_0032,2022-01-04,North America,light,2000.0,0,no_failure,33.4,2.0
+UNIT_0033,2022-01-05,North America,light,2000.0,0,no_failure,18.6,3.7
+UNIT_0034,2022-01-05,North America,light,2000.0,0,no_failure,35.1,2.3
+UNIT_0035,2022-01-05,Europe,moderate,2000.0,0,no_failure,29.2,1.3
+UNIT_0036,2022-01-05,North America,heavy,2000.0,0,no_failure,36.6,1.3
+UNIT_0037,2022-01-05,North America,light,2000.0,0,no_failure,37.9,0.7
+UNIT_0038,2022-01-05,Europe,moderate,2000.0,0,no_failure,19.0,2.7
+UNIT_0039,2022-01-05,Europe,moderate,2000.0,0,no_failure,35.6,3.7
+UNIT_0040,2022-01-05,North America,moderate,2000.0,0,no_failure,27.5,1.3
+UNIT_0041,2022-01-06,Asia Pacific,moderate,2000.0,0,no_failure,19.4,1.0
+UNIT_0042,2022-01-06,North America,light,921.4,1,capacity_fade,19.4,0.8
+UNIT_0043,2022-01-06,Latin America,moderate,2000.0,0,no_failure,32.9,1.4
+UNIT_0044,2022-01-06,Latin America,light,2000.0,0,no_failure,24.7,3.2
+UNIT_0045,2022-01-06,Europe,moderate,2000.0,0,no_failure,28.0,1.8
+UNIT_0046,2022-01-06,North America,light,2000.0,0,no_failure,28.5,3.1
+UNIT_0047,2022-01-06,Asia Pacific,moderate,2000.0,0,no_failure,23.2,2.3
+UNIT_0048,2022-01-06,North America,moderate,2000.0,0,no_failure,16.3,0.8
+UNIT_0049,2022-01-07,North America,moderate,2000.0,0,no_failure,20.1,1.8
+UNIT_0050,2022-01-07,Europe,light,2000.0,0,no_failure,28.6,2.9
+UNIT_0051,2022-01-07,Europe,moderate,2000.0,0,no_failure,30.0,1.9
+UNIT_0052,2022-01-07,Asia Pacific,moderate,2000.0,0,no_failure,31.7,2.3
+UNIT_0053,2022-01-07,Asia Pacific,moderate,2000.0,0,no_failure,29.9,2.6
+UNIT_0054,2022-01-07,Asia Pacific,light,2000.0,0,no_failure,33.0,3.7
+UNIT_0055,2022-01-07,Asia Pacific,light,2000.0,0,no_failure,29.5,3.9
+UNIT_0056,2022-01-07,Europe,light,2000.0,0,no_failure,15.1,2.7
+UNIT_0057,2022-01-08,Europe,moderate,2000.0,0,no_failure,21.8,1.5
+UNIT_0058,2022-01-08,Latin America,moderate,2000.0,0,no_failure,15.2,1.3
+UNIT_0059,2022-01-08,Latin America,moderate,841.3,1,thermal_issue,35.5,4.0
+UNIT_0060,2022-01-08,Asia Pacific,moderate,2000.0,0,no_failure,21.0,3.5
+UNIT_0061,2022-01-08,Asia Pacific,moderate,1640.1,1,unknown,31.4,2.3
+UNIT_0062,2022-01-08,Europe,moderate,1514.9,1,capacity_fade,27.5,1.9
+UNIT_0063,2022-01-08,North America,moderate,2000.0,0,no_failure,29.8,2.0
+UNIT_0064,2022-01-08,Asia Pacific,moderate,2000.0,0,no_failure,26.0,1.1
+UNIT_0065,2022-01-09,North America,light,2000.0,0,no_failure,28.9,3.3
+UNIT_0066,2022-01-09,North America,heavy,2000.0,0,no_failure,21.4,3.4
+UNIT_0067,2022-01-09,Europe,heavy,2000.0,0,no_failure,31.3,2.3
+UNIT_0068,2022-01-09,Europe,moderate,2000.0,0,no_failure,20.2,1.9
+UNIT_0069,2022-01-09,Europe,heavy,2000.0,0,no_failure,18.1,3.3
+UNIT_0070,2022-01-09,North America,heavy,1780.4,1,capacity_fade,16.8,3.5
+UNIT_0071,2022-01-09,North America,moderate,2000.0,0,no_failure,21.6,0.9
+UNIT_0072,2022-01-09,North America,moderate,2000.0,0,no_failure,19.9,3.1
+UNIT_0073,2022-01-10,North America,moderate,2000.0,0,no_failure,20.0,0.6
+UNIT_0074,2022-01-10,North America,light,2000.0,0,no_failure,30.8,2.8
+UNIT_0075,2022-01-10,Europe,light,2000.0,0,no_failure,37.2,2.2
+UNIT_0076,2022-01-10,North America,moderate,2000.0,0,no_failure,29.9,0.8
+UNIT_0077,2022-01-10,North America,moderate,2000.0,0,no_failure,28.4,2.8
+UNIT_0078,2022-01-10,North America,light,2000.0,0,no_failure,25.1,3.6
+UNIT_0079,2022-01-10,Europe,moderate,2000.0,0,no_failure,15.0,1.4
+UNIT_0080,2022-01-10,Asia Pacific,moderate,2000.0,0,no_failure,33.9,2.8
+UNIT_0081,2022-01-11,North America,moderate,2000.0,0,no_failure,25.5,1.9
+UNIT_0082,2022-01-11,North America,light,2000.0,0,no_failure,20.0,3.1
+UNIT_0083,2022-01-11,Europe,moderate,1381.7,1,capacity_fade,35.4,2.5
+UNIT_0084,2022-01-11,North America,light,1761.2,1,thermal_issue,26.7,3.5
+UNIT_0085,2022-01-11,Asia Pacific,light,2000.0,0,no_failure,15.1,1.2
+UNIT_0086,2022-01-11,Latin America,light,2000.0,0,no_failure,31.2,2.3
+UNIT_0087,2022-01-11,Europe,light,2000.0,0,no_failure,26.8,1.6
+UNIT_0088,2022-01-11,Latin America,light,2000.0,0,no_failure,19.7,1.9
+UNIT_0089,2022-01-12,Europe,moderate,2000.0,0,no_failure,36.6,1.3
+UNIT_0090,2022-01-12,Europe,moderate,2000.0,0,no_failure,18.5,3.0
+UNIT_0091,2022-01-12,North America,light,891.0,1,thermal_issue,18.8,1.1
+UNIT_0092,2022-01-12,North America,heavy,2000.0,0,no_failure,23.6,2.1
+UNIT_0093,2022-01-12,North America,moderate,2000.0,0,no_failure,36.9,1.5
+UNIT_0094,2022-01-12,Europe,heavy,2000.0,0,no_failure,34.7,2.8
+UNIT_0095,2022-01-12,Europe,moderate,2000.0,0,no_failure,27.7,0.8
+UNIT_0096,2022-01-12,North America,light,2000.0,0,no_failure,24.9,3.2
+UNIT_0097,2022-01-13,Europe,heavy,2000.0,0,no_failure,19.6,0.8
+UNIT_0098,2022-01-13,North America,heavy,1894.2,1,connector_failure,23.7,2.7
+UNIT_0099,2022-01-13,North America,moderate,2000.0,0,no_failure,36.5,1.9
+UNIT_0100,2022-01-13,North America,moderate,1399.8,1,capacity_fade,28.9,1.4
+UNIT_0101,2022-01-13,Europe,moderate,2000.0,0,no_failure,22.8,3.1
+UNIT_0102,2022-01-13,Europe,moderate,2000.0,0,no_failure,23.1,1.2
+UNIT_0103,2022-01-13,Asia Pacific,moderate,2000.0,0,no_failure,23.1,4.0
+UNIT_0104,2022-01-13,North America,moderate,2000.0,0,no_failure,30.6,3.7
+UNIT_0105,2022-01-14,Europe,light,2000.0,0,no_failure,20.7,2.6
+UNIT_0106,2022-01-14,Latin America,light,2000.0,0,no_failure,24.7,3.9
+UNIT_0107,2022-01-14,North America,light,2000.0,0,no_failure,25.8,1.1
+UNIT_0108,2022-01-14,Europe,light,2000.0,0,no_failure,28.9,3.1
+UNIT_0109,2022-01-14,North America,moderate,2000.0,0,no_failure,22.6,0.7
+UNIT_0110,2022-01-14,North America,heavy,2000.0,0,no_failure,26.6,3.2
+UNIT_0111,2022-01-14,Europe,light,2000.0,0,no_failure,35.0,3.2
+UNIT_0112,2022-01-14,North America,light,2000.0,0,no_failure,29.5,3.1
+UNIT_0113,2022-01-15,Europe,light,2000.0,0,no_failure,24.7,2.8
+UNIT_0114,2022-01-15,Latin America,moderate,2000.0,0,no_failure,32.0,3.7
+UNIT_0115,2022-01-15,North America,moderate,2000.0,0,no_failure,18.6,1.2
+UNIT_0116,2022-01-15,North America,moderate,2000.0,0,no_failure,29.5,3.7
+UNIT_0117,2022-01-15,Asia Pacific,heavy,1662.6,1,software_fault,30.7,1.2
+UNIT_0118,2022-01-15,Europe,heavy,1021.0,1,thermal_issue,18.6,3.3
+UNIT_0119,2022-01-15,Asia Pacific,heavy,2000.0,0,no_failure,26.0,1.5
+UNIT_0120,2022-01-15,North America,heavy,2000.0,0,no_failure,31.6,3.2
+UNIT_0121,2022-01-16,Europe,moderate,2000.0,0,no_failure,28.4,3.8
+UNIT_0122,2022-01-16,Latin America,moderate,2000.0,0,no_failure,27.0,1.5
+UNIT_0123,2022-01-16,North America,moderate,2000.0,0,no_failure,31.9,1.7
+UNIT_0124,2022-01-16,Asia Pacific,moderate,2000.0,0,no_failure,36.9,2.0
+UNIT_0125,2022-01-16,Europe,light,2000.0,0,no_failure,30.3,0.5
+UNIT_0126,2022-01-16,Asia Pacific,light,2000.0,0,no_failure,27.1,2.2
+UNIT_0127,2022-01-16,North America,light,2000.0,0,no_failure,26.9,1.6
+UNIT_0128,2022-01-16,Europe,moderate,2000.0,0,no_failure,24.6,3.6
+UNIT_0129,2022-01-17,North America,moderate,1796.8,1,capacity_fade,19.4,2.0
+UNIT_0130,2022-01-17,Latin America,light,2000.0,0,no_failure,32.5,0.9
+UNIT_0131,2022-01-17,North America,moderate,2000.0,0,no_failure,21.2,2.2
+UNIT_0132,2022-01-17,North America,moderate,2000.0,0,no_failure,31.8,3.8
+UNIT_0133,2022-01-17,Asia Pacific,moderate,2000.0,0,no_failure,36.9,1.6
+UNIT_0134,2022-01-17,North America,light,2000.0,0,no_failure,31.1,1.2
+UNIT_0135,2022-01-17,Europe,light,2000.0,0,no_failure,16.6,2.9
+UNIT_0136,2022-01-17,North America,moderate,2000.0,0,no_failure,35.5,1.5
+UNIT_0137,2022-01-18,Europe,moderate,2000.0,0,no_failure,18.2,2.6
+UNIT_0138,2022-01-18,North America,heavy,1644.2,1,capacity_fade,17.2,2.8
+UNIT_0139,2022-01-18,Europe,moderate,2000.0,0,no_failure,28.2,3.9
+UNIT_0140,2022-01-18,Europe,heavy,1669.2,1,capacity_fade,18.3,0.9
+UNIT_0141,2022-01-18,North America,light,2000.0,0,no_failure,32.1,1.5
+UNIT_0142,2022-01-18,North America,moderate,1867.0,1,thermal_issue,21.9,2.5
+UNIT_0143,2022-01-18,North America,heavy,2000.0,0,no_failure,21.7,2.3
+UNIT_0144,2022-01-18,Asia Pacific,light,2000.0,0,no_failure,30.9,3.1
+UNIT_0145,2022-01-19,North America,moderate,2000.0,0,no_failure,27.4,2.4
+UNIT_0146,2022-01-19,North America,light,2000.0,0,no_failure,31.0,2.8
+UNIT_0147,2022-01-19,North America,moderate,2000.0,0,no_failure,34.1,1.3
+UNIT_0148,2022-01-19,Europe,light,2000.0,0,no_failure,22.9,1.4
+UNIT_0149,2022-01-19,Asia Pacific,moderate,2000.0,0,no_failure,20.3,2.8
+UNIT_0150,2022-01-19,Europe,moderate,2000.0,0,no_failure,18.5,1.4
+UNIT_0151,2022-01-19,Asia Pacific,light,2000.0,0,no_failure,31.9,1.9
+UNIT_0152,2022-01-19,Europe,light,2000.0,0,no_failure,21.8,0.8
+UNIT_0153,2022-01-20,Asia Pacific,light,1306.3,1,unknown,17.2,0.9
+UNIT_0154,2022-01-20,Asia Pacific,light,2000.0,0,no_failure,30.3,2.0
+UNIT_0155,2022-01-20,North America,moderate,2000.0,0,no_failure,36.5,0.8
+UNIT_0156,2022-01-20,Latin America,heavy,1442.2,1,software_fault,33.0,4.0
+UNIT_0157,2022-01-20,Asia Pacific,light,2000.0,0,no_failure,36.7,1.7
+UNIT_0158,2022-01-20,Europe,moderate,2000.0,0,no_failure,35.3,1.1
+UNIT_0159,2022-01-20,North America,moderate,2000.0,0,no_failure,28.4,3.5
+UNIT_0160,2022-01-20,North America,light,2000.0,0,no_failure,34.6,1.7
+UNIT_0161,2022-01-21,Europe,light,2000.0,0,no_failure,22.8,3.7
+UNIT_0162,2022-01-21,Europe,moderate,1765.5,1,connector_failure,18.4,3.8
+UNIT_0163,2022-01-21,Europe,moderate,2000.0,0,no_failure,20.4,1.5
+UNIT_0164,2022-01-21,North America,heavy,1867.2,1,connector_failure,33.8,2.5
+UNIT_0165,2022-01-21,Europe,moderate,2000.0,0,no_failure,31.5,2.1
+UNIT_0166,2022-01-21,North America,moderate,1747.8,1,capacity_fade,22.5,2.6
+UNIT_0167,2022-01-21,North America,heavy,1054.8,1,connector_failure,21.2,2.9
+UNIT_0168,2022-01-21,North America,heavy,487.8,1,connector_failure,16.2,1.7
+UNIT_0169,2022-01-22,Asia Pacific,heavy,366.1,1,connector_failure,32.6,0.9
+UNIT_0170,2022-01-22,Europe,light,2000.0,0,no_failure,28.4,2.3
+UNIT_0171,2022-01-22,Latin America,heavy,2000.0,0,no_failure,22.7,3.0
+UNIT_0172,2022-01-22,Asia Pacific,heavy,2000.0,0,no_failure,32.9,1.4
+UNIT_0173,2022-01-22,Asia Pacific,moderate,2000.0,0,no_failure,18.4,2.2
+UNIT_0174,2022-01-22,Europe,moderate,266.0,1,capacity_fade,29.5,3.6
+UNIT_0175,2022-01-22,Asia Pacific,heavy,637.3,1,connector_failure,29.6,3.8
+UNIT_0176,2022-01-22,Latin America,moderate,2000.0,0,no_failure,17.4,1.0
+UNIT_0177,2022-01-23,Asia Pacific,moderate,2000.0,0,no_failure,20.0,3.7
+UNIT_0178,2022-01-23,North America,moderate,2000.0,0,no_failure,36.8,1.5
+UNIT_0179,2022-01-23,Europe,moderate,2000.0,0,no_failure,30.2,0.6
+UNIT_0180,2022-01-23,North America,moderate,2000.0,0,no_failure,19.8,1.8
+UNIT_0181,2022-01-23,North America,light,2000.0,0,no_failure,34.4,1.5
+UNIT_0182,2022-01-23,Europe,light,2000.0,0,no_failure,19.4,1.5
+UNIT_0183,2022-01-23,Asia Pacific,moderate,1244.1,1,thermal_issue,30.1,3.4
+UNIT_0184,2022-01-23,North America,moderate,2000.0,0,no_failure,18.7,3.1
+UNIT_0185,2022-01-24,North America,moderate,1792.3,1,capacity_fade,26.9,0.7
+UNIT_0186,2022-01-24,Asia Pacific,heavy,1140.1,1,capacity_fade,17.9,3.8
+UNIT_0187,2022-01-24,North America,moderate,2000.0,0,no_failure,26.5,4.0
+UNIT_0188,2022-01-24,North America,moderate,2000.0,0,no_failure,24.5,3.8
+UNIT_0189,2022-01-24,Asia Pacific,light,2000.0,0,no_failure,19.1,2.4
+UNIT_0190,2022-01-24,Asia Pacific,moderate,2000.0,0,no_failure,33.3,0.6
+UNIT_0191,2022-01-24,Europe,heavy,2000.0,0,no_failure,31.3,3.9
+UNIT_0192,2022-01-24,Europe,moderate,1866.5,1,capacity_fade,36.4,2.7
+UNIT_0193,2022-01-25,North America,heavy,563.3,1,capacity_fade,33.1,2.5
+UNIT_0194,2022-01-25,North America,heavy,2000.0,0,no_failure,35.2,1.3
+UNIT_0195,2022-01-25,Asia Pacific,moderate,1961.5,1,thermal_issue,35.3,1.4
+UNIT_0196,2022-01-25,Asia Pacific,moderate,2000.0,0,no_failure,18.5,1.1
+UNIT_0197,2022-01-25,North America,moderate,2000.0,0,no_failure,17.7,0.6
+UNIT_0198,2022-01-25,North America,moderate,2000.0,0,no_failure,23.3,1.9
+UNIT_0199,2022-01-25,North America,light,2000.0,0,no_failure,19.1,2.8
+UNIT_0200,2022-01-25,North America,light,2000.0,0,no_failure,17.4,2.9
+UNIT_0201,2022-01-26,North America,light,2000.0,0,no_failure,34.9,3.7
+UNIT_0202,2022-01-26,North America,moderate,2000.0,0,no_failure,22.4,1.3
+UNIT_0203,2022-01-26,Asia Pacific,light,2000.0,0,no_failure,25.4,3.0
+UNIT_0204,2022-01-26,North America,moderate,2000.0,0,no_failure,21.4,0.9
+UNIT_0205,2022-01-26,Europe,moderate,2000.0,0,no_failure,28.6,1.4
+UNIT_0206,2022-01-26,Europe,moderate,2000.0,0,no_failure,33.2,1.7
+UNIT_0207,2022-01-26,Asia Pacific,heavy,1437.6,1,thermal_issue,33.1,3.8
+UNIT_0208,2022-01-26,Latin America,moderate,1878.5,1,software_fault,32.6,3.0
+UNIT_0209,2022-01-27,North America,light,2000.0,0,no_failure,15.5,2.3
+UNIT_0210,2022-01-27,North America,heavy,1576.0,1,capacity_fade,36.3,1.0
+UNIT_0211,2022-01-27,Asia Pacific,heavy,2000.0,0,no_failure,26.6,3.4
+UNIT_0212,2022-01-27,North America,moderate,2000.0,0,no_failure,29.6,2.4
+UNIT_0213,2022-01-27,North America,moderate,2000.0,0,no_failure,19.1,1.2
+UNIT_0214,2022-01-27,North America,light,2000.0,0,no_failure,17.3,2.7
+UNIT_0215,2022-01-27,Asia Pacific,moderate,1201.5,1,capacity_fade,28.7,2.4
+UNIT_0216,2022-01-27,North America,light,2000.0,0,no_failure,25.9,3.1
+UNIT_0217,2022-01-28,Europe,moderate,2000.0,0,no_failure,21.3,1.6
+UNIT_0218,2022-01-28,Europe,light,2000.0,0,no_failure,32.6,1.7
+UNIT_0219,2022-01-28,Europe,moderate,2000.0,0,no_failure,25.3,2.6
+UNIT_0220,2022-01-28,North America,light,2000.0,0,no_failure,26.8,2.2
+UNIT_0221,2022-01-28,Asia Pacific,light,2000.0,0,no_failure,26.9,1.4
+UNIT_0222,2022-01-28,Asia Pacific,light,2000.0,0,no_failure,23.9,1.0
+UNIT_0223,2022-01-28,Europe,moderate,2000.0,0,no_failure,27.3,3.7
+UNIT_0224,2022-01-28,North America,light,2000.0,0,no_failure,21.1,1.9
+UNIT_0225,2022-01-29,Asia Pacific,moderate,2000.0,0,no_failure,34.4,1.0
+UNIT_0226,2022-01-29,Asia Pacific,light,2000.0,0,no_failure,33.2,3.2
+UNIT_0227,2022-01-29,North America,moderate,2000.0,0,no_failure,31.8,2.5
+UNIT_0228,2022-01-29,North America,light,2000.0,0,no_failure,16.3,1.8
+UNIT_0229,2022-01-29,North America,heavy,714.6,1,capacity_fade,34.1,3.5
+UNIT_0230,2022-01-29,North America,light,1512.8,1,capacity_fade,30.4,2.2
+UNIT_0231,2022-01-29,North America,light,2000.0,0,no_failure,33.5,1.3
+UNIT_0232,2022-01-29,North America,light,2000.0,0,no_failure,32.2,2.6
+UNIT_0233,2022-01-30,North America,light,2000.0,0,no_failure,30.9,3.7
+UNIT_0234,2022-01-30,Asia Pacific,moderate,909.1,1,thermal_issue,20.0,2.2
+UNIT_0235,2022-01-30,Asia Pacific,light,2000.0,0,no_failure,24.0,1.2
+UNIT_0236,2022-01-30,Asia Pacific,heavy,2000.0,0,no_failure,23.7,3.6
+UNIT_0237,2022-01-30,Europe,moderate,2000.0,0,no_failure,34.3,2.4
+UNIT_0238,2022-01-30,Europe,light,2000.0,0,no_failure,31.2,3.3
+UNIT_0239,2022-01-30,North America,moderate,2000.0,0,no_failure,24.8,2.5
+UNIT_0240,2022-01-30,Europe,light,2000.0,0,no_failure,24.8,3.2
+UNIT_0241,2022-01-31,North America,light,2000.0,0,no_failure,25.4,2.6
+UNIT_0242,2022-01-31,Europe,light,2000.0,0,no_failure,21.0,1.3
+UNIT_0243,2022-01-31,Latin America,light,2000.0,0,no_failure,30.9,2.1
+UNIT_0244,2022-01-31,Asia Pacific,light,2000.0,0,no_failure,19.7,3.6
+UNIT_0245,2022-01-31,North America,heavy,2000.0,0,no_failure,29.0,0.9
+UNIT_0246,2022-01-31,Asia Pacific,moderate,1601.7,1,capacity_fade,23.4,2.2
+UNIT_0247,2022-01-31,North America,heavy,1445.0,1,capacity_fade,15.1,1.7
+UNIT_0248,2022-01-31,North America,light,2000.0,0,no_failure,18.0,0.5
+UNIT_0249,2022-02-01,North America,heavy,2000.0,0,no_failure,36.4,2.7
+UNIT_0250,2022-02-01,North America,moderate,1511.4,1,unknown,37.4,2.1
+UNIT_0251,2022-02-01,Europe,light,2000.0,0,no_failure,31.6,3.9
+UNIT_0252,2022-02-01,North America,heavy,2000.0,0,no_failure,29.4,2.6
+UNIT_0253,2022-02-01,North America,light,2000.0,0,no_failure,16.7,1.0
+UNIT_0254,2022-02-01,Latin America,moderate,2000.0,0,no_failure,18.3,1.8
+UNIT_0255,2022-02-01,Europe,heavy,1562.6,1,capacity_fade,15.6,2.5
+UNIT_0256,2022-02-01,North America,moderate,2000.0,0,no_failure,27.7,1.6
+UNIT_0257,2022-02-02,Europe,moderate,2000.0,0,no_failure,28.6,3.9
+UNIT_0258,2022-02-02,Europe,moderate,2000.0,0,no_failure,15.1,3.2
+UNIT_0259,2022-02-02,Europe,light,2000.0,0,no_failure,16.4,2.7
+UNIT_0260,2022-02-02,Europe,heavy,2000.0,0,no_failure,18.4,2.4
+UNIT_0261,2022-02-02,Asia Pacific,light,2000.0,0,no_failure,15.4,3.5
+UNIT_0262,2022-02-02,North America,light,2000.0,0,no_failure,33.0,3.0
+UNIT_0263,2022-02-02,Europe,light,2000.0,0,no_failure,25.1,2.0
+UNIT_0264,2022-02-02,North America,heavy,1563.4,1,thermal_issue,26.2,3.1
+UNIT_0265,2022-02-03,Asia Pacific,moderate,2000.0,0,no_failure,18.0,3.5
+UNIT_0266,2022-02-03,North America,moderate,2000.0,0,no_failure,23.1,2.9
+UNIT_0267,2022-02-03,North America,heavy,2000.0,0,no_failure,32.5,1.9
+UNIT_0268,2022-02-03,Latin America,light,2000.0,0,no_failure,16.3,1.1
+UNIT_0269,2022-02-03,Europe,heavy,2000.0,0,no_failure,23.8,0.6
+UNIT_0270,2022-02-03,North America,light,2000.0,0,no_failure,24.5,3.0
+UNIT_0271,2022-02-03,North America,moderate,2000.0,0,no_failure,32.1,3.5
+UNIT_0272,2022-02-03,North America,light,2000.0,0,no_failure,33.4,0.9
+UNIT_0273,2022-02-04,Latin America,heavy,1968.1,1,capacity_fade,16.2,0.7
+UNIT_0274,2022-02-04,Europe,heavy,927.9,1,software_fault,27.5,3.8
+UNIT_0275,2022-02-04,North America,moderate,2000.0,0,no_failure,29.5,1.1
+UNIT_0276,2022-02-04,Europe,light,2000.0,0,no_failure,23.9,3.8
+UNIT_0277,2022-02-04,Europe,light,2000.0,0,no_failure,19.6,2.7
+UNIT_0278,2022-02-04,North America,moderate,2000.0,0,no_failure,27.9,0.9
+UNIT_0279,2022-02-04,Asia Pacific,light,2000.0,0,no_failure,33.4,1.7
+UNIT_0280,2022-02-04,North America,light,2000.0,0,no_failure,17.7,3.8
+UNIT_0281,2022-02-05,Asia Pacific,moderate,1613.4,1,capacity_fade,21.9,3.4
+UNIT_0282,2022-02-05,Asia Pacific,moderate,2000.0,0,no_failure,15.2,1.1
+UNIT_0283,2022-02-05,North America,heavy,2000.0,0,no_failure,24.3,0.6
+UNIT_0284,2022-02-05,Asia Pacific,moderate,2000.0,0,no_failure,18.5,2.3
+UNIT_0285,2022-02-05,Asia Pacific,light,2000.0,0,no_failure,32.0,3.2
+UNIT_0286,2022-02-05,Europe,moderate,2000.0,0,no_failure,30.1,3.7
+UNIT_0287,2022-02-05,Europe,light,2000.0,0,no_failure,24.5,2.0
+UNIT_0288,2022-02-05,North America,moderate,2000.0,0,no_failure,15.8,0.6
+UNIT_0289,2022-02-06,North America,moderate,2000.0,0,no_failure,34.0,1.0
+UNIT_0290,2022-02-06,Asia Pacific,light,2000.0,0,no_failure,29.5,1.1
+UNIT_0291,2022-02-06,North America,light,2000.0,0,no_failure,25.7,1.3
+UNIT_0292,2022-02-06,North America,heavy,2000.0,0,no_failure,18.8,3.5
+UNIT_0293,2022-02-06,Europe,moderate,2000.0,0,no_failure,18.0,0.9
+UNIT_0294,2022-02-06,North America,moderate,2000.0,0,no_failure,23.1,1.3
+UNIT_0295,2022-02-06,Asia Pacific,moderate,2000.0,0,no_failure,25.7,3.8
+UNIT_0296,2022-02-06,Asia Pacific,moderate,1984.1,1,capacity_fade,28.7,1.4
+UNIT_0297,2022-02-07,Asia Pacific,light,2000.0,0,no_failure,17.2,0.8
+UNIT_0298,2022-02-07,North America,heavy,2000.0,0,no_failure,21.5,3.9
+UNIT_0299,2022-02-07,Europe,heavy,1236.7,1,capacity_fade,23.6,2.3
+UNIT_0300,2022-02-07,Asia Pacific,light,2000.0,0,no_failure,34.2,0.5
+UNIT_0301,2022-02-07,North America,light,2000.0,0,no_failure,34.0,0.5
+UNIT_0302,2022-02-07,Europe,moderate,2000.0,0,no_failure,21.0,1.9
+UNIT_0303,2022-02-07,Europe,moderate,2000.0,0,no_failure,24.0,3.6
+UNIT_0304,2022-02-07,North America,moderate,2000.0,0,no_failure,35.8,3.0
+UNIT_0305,2022-02-08,North America,moderate,2000.0,0,no_failure,26.4,1.9
+UNIT_0306,2022-02-08,Europe,moderate,2000.0,0,no_failure,19.3,3.8
+UNIT_0307,2022-02-08,North America,moderate,2000.0,0,no_failure,29.1,2.3
+UNIT_0308,2022-02-08,Asia Pacific,light,2000.0,0,no_failure,30.4,2.8
+UNIT_0309,2022-02-08,Europe,light,2000.0,0,no_failure,28.4,1.7
+UNIT_0310,2022-02-08,North America,moderate,2000.0,0,no_failure,27.6,1.1
+UNIT_0311,2022-02-08,Asia Pacific,heavy,2000.0,0,no_failure,25.5,2.4
+UNIT_0312,2022-02-08,Europe,moderate,2000.0,0,no_failure,30.0,3.1
+UNIT_0313,2022-02-09,North America,moderate,2000.0,0,no_failure,17.5,2.8
+UNIT_0314,2022-02-09,Latin America,heavy,1416.9,1,capacity_fade,18.0,1.6
+UNIT_0315,2022-02-09,Asia Pacific,moderate,2000.0,0,no_failure,18.6,1.5
+UNIT_0316,2022-02-09,Europe,moderate,2000.0,0,no_failure,37.2,1.3
+UNIT_0317,2022-02-09,Asia Pacific,light,2000.0,0,no_failure,18.2,3.2
+UNIT_0318,2022-02-09,Europe,moderate,570.9,1,connector_failure,20.7,3.0
+UNIT_0319,2022-02-09,Europe,moderate,631.6,1,connector_failure,31.0,0.7
+UNIT_0320,2022-02-09,North America,moderate,2000.0,0,no_failure,23.3,1.1
+UNIT_0321,2022-02-10,North America,light,2000.0,0,no_failure,22.8,1.2
+UNIT_0322,2022-02-10,Europe,moderate,2000.0,0,no_failure,29.6,2.0
+UNIT_0323,2022-02-10,Europe,light,2000.0,0,no_failure,33.0,1.6
+UNIT_0324,2022-02-10,Asia Pacific,heavy,2000.0,0,no_failure,35.5,1.3
+UNIT_0325,2022-02-10,Europe,light,2000.0,0,no_failure,36.8,2.4
+UNIT_0326,2022-02-10,Europe,moderate,2000.0,0,no_failure,22.1,2.5
+UNIT_0327,2022-02-10,Asia Pacific,moderate,2000.0,0,no_failure,15.1,4.0
+UNIT_0328,2022-02-10,Latin America,light,2000.0,0,no_failure,37.4,2.8
+UNIT_0329,2022-02-11,North America,moderate,2000.0,0,no_failure,37.2,2.5
+UNIT_0330,2022-02-11,Latin America,light,2000.0,0,no_failure,32.6,2.3
+UNIT_0331,2022-02-11,Asia Pacific,moderate,2000.0,0,no_failure,19.5,0.5
+UNIT_0332,2022-02-11,North America,heavy,1484.4,1,connector_failure,20.2,2.3
+UNIT_0333,2022-02-11,North America,moderate,2000.0,0,no_failure,30.1,3.6
+UNIT_0334,2022-02-11,North America,heavy,2000.0,0,no_failure,35.5,2.7
+UNIT_0335,2022-02-11,Europe,light,2000.0,0,no_failure,36.7,1.1
+UNIT_0336,2022-02-11,Europe,moderate,1903.6,1,capacity_fade,28.2,2.9
+UNIT_0337,2022-02-12,Europe,heavy,339.3,1,software_fault,19.0,1.5
+UNIT_0338,2022-02-12,Asia Pacific,heavy,1688.0,1,capacity_fade,32.5,0.6
+UNIT_0339,2022-02-12,North America,light,2000.0,0,no_failure,15.5,3.2
+UNIT_0340,2022-02-12,North America,moderate,2000.0,0,no_failure,30.2,2.6
+UNIT_0341,2022-02-12,Asia Pacific,heavy,2000.0,0,no_failure,20.9,0.7
+UNIT_0342,2022-02-12,Latin America,moderate,2000.0,0,no_failure,21.0,2.1
+UNIT_0343,2022-02-12,Asia Pacific,moderate,2000.0,0,no_failure,22.3,2.2
+UNIT_0344,2022-02-12,North America,light,2000.0,0,no_failure,17.6,3.5
+UNIT_0345,2022-02-13,North America,light,2000.0,0,no_failure,16.0,0.9
+UNIT_0346,2022-02-13,North America,moderate,1513.9,1,capacity_fade,16.4,1.0
+UNIT_0347,2022-02-13,Europe,moderate,2000.0,0,no_failure,34.0,3.2
+UNIT_0348,2022-02-13,North America,light,2000.0,0,no_failure,31.6,3.1
+UNIT_0349,2022-02-13,Latin America,light,2000.0,0,no_failure,31.8,3.1
+UNIT_0350,2022-02-13,Europe,moderate,2000.0,0,no_failure,27.8,1.2
+UNIT_0351,2022-02-13,Europe,moderate,1417.0,1,connector_failure,17.1,1.1
+UNIT_0352,2022-02-13,North America,moderate,763.8,1,capacity_fade,37.3,1.8
+UNIT_0353,2022-02-14,North America,moderate,2000.0,0,no_failure,24.3,1.6
+UNIT_0354,2022-02-14,Europe,light,2000.0,0,no_failure,29.6,0.6
+UNIT_0355,2022-02-14,Asia Pacific,heavy,2000.0,0,no_failure,15.8,2.9
+UNIT_0356,2022-02-14,North America,moderate,2000.0,0,no_failure,35.9,1.2
+UNIT_0357,2022-02-14,Asia Pacific,light,2000.0,0,no_failure,33.2,3.5
+UNIT_0358,2022-02-14,North America,moderate,2000.0,0,no_failure,25.4,1.3
+UNIT_0359,2022-02-14,North America,moderate,771.0,1,thermal_issue,24.9,1.4
+UNIT_0360,2022-02-14,Latin America,moderate,2000.0,0,no_failure,26.4,4.0
+UNIT_0361,2022-02-15,North America,moderate,2000.0,0,no_failure,35.0,3.2
+UNIT_0362,2022-02-15,North America,moderate,1586.3,1,capacity_fade,36.0,1.0
+UNIT_0363,2022-02-15,Europe,moderate,2000.0,0,no_failure,29.0,1.2
+UNIT_0364,2022-02-15,North America,light,2000.0,0,no_failure,25.7,1.8
+UNIT_0365,2022-02-15,North America,light,2000.0,0,no_failure,16.7,2.2
+UNIT_0366,2022-02-15,North America,light,2000.0,0,no_failure,29.0,0.9
+UNIT_0367,2022-02-15,North America,moderate,2000.0,0,no_failure,33.5,1.3
+UNIT_0368,2022-02-15,Europe,moderate,2000.0,0,no_failure,21.3,1.3
+UNIT_0369,2022-02-16,North America,moderate,2000.0,0,no_failure,35.3,1.9
+UNIT_0370,2022-02-16,Asia Pacific,light,2000.0,0,no_failure,27.3,1.8
+UNIT_0371,2022-02-16,Asia Pacific,moderate,2000.0,0,no_failure,37.8,2.3
+UNIT_0372,2022-02-16,North America,light,2000.0,0,no_failure,22.9,3.9
+UNIT_0373,2022-02-16,North America,moderate,2000.0,0,no_failure,19.1,3.9
+UNIT_0374,2022-02-16,North America,moderate,2000.0,0,no_failure,25.0,1.7
+UNIT_0375,2022-02-16,North America,light,2000.0,0,no_failure,34.1,2.2
+UNIT_0376,2022-02-16,North America,light,2000.0,0,no_failure,21.9,1.6
+UNIT_0377,2022-02-17,Asia Pacific,moderate,1675.6,1,software_fault,17.4,1.9
+UNIT_0378,2022-02-17,North America,moderate,2000.0,0,no_failure,24.3,1.5
+UNIT_0379,2022-02-17,Europe,light,2000.0,0,no_failure,17.9,3.6
+UNIT_0380,2022-02-17,Europe,heavy,715.4,1,connector_failure,29.5,1.8
+UNIT_0381,2022-02-17,Asia Pacific,heavy,2000.0,0,no_failure,19.7,2.5
+UNIT_0382,2022-02-17,North America,heavy,1053.7,1,software_fault,28.4,2.2
+UNIT_0383,2022-02-17,North America,light,1904.4,1,connector_failure,28.0,1.4
+UNIT_0384,2022-02-17,Latin America,moderate,2000.0,0,no_failure,16.8,1.2
+UNIT_0385,2022-02-18,North America,light,2000.0,0,no_failure,18.4,1.4
+UNIT_0386,2022-02-18,Europe,heavy,2000.0,0,no_failure,31.8,0.7
+UNIT_0387,2022-02-18,Europe,moderate,1736.3,1,connector_failure,28.6,2.1
+UNIT_0388,2022-02-18,Europe,light,2000.0,0,no_failure,32.4,3.8
+UNIT_0389,2022-02-18,North America,light,2000.0,0,no_failure,18.8,1.4
+UNIT_0390,2022-02-18,North America,heavy,1107.2,1,capacity_fade,35.1,1.7
+UNIT_0391,2022-02-18,Europe,heavy,1109.8,1,connector_failure,37.8,1.2
+UNIT_0392,2022-02-18,Europe,moderate,2000.0,0,no_failure,33.9,1.9
+UNIT_0393,2022-02-19,Asia Pacific,moderate,2000.0,0,no_failure,24.9,1.4
+UNIT_0394,2022-02-19,Asia Pacific,moderate,2000.0,0,no_failure,17.2,3.0
+UNIT_0395,2022-02-19,Latin America,heavy,2000.0,0,no_failure,22.1,2.5
+UNIT_0396,2022-02-19,Latin America,moderate,2000.0,0,no_failure,17.9,2.8
+UNIT_0397,2022-02-19,Asia Pacific,moderate,1788.2,1,software_fault,21.3,3.4
+UNIT_0398,2022-02-19,North America,moderate,2000.0,0,no_failure,23.5,3.1
+UNIT_0399,2022-02-19,Europe,heavy,2000.0,0,no_failure,19.6,3.5
+UNIT_0400,2022-02-19,Europe,light,2000.0,0,no_failure,17.4,2.0
+UNIT_0401,2022-02-20,Europe,moderate,2000.0,0,no_failure,29.0,3.4
+UNIT_0402,2022-02-20,North America,light,2000.0,0,no_failure,20.1,1.4
+UNIT_0403,2022-02-20,Europe,moderate,1547.6,1,thermal_issue,17.4,2.6
+UNIT_0404,2022-02-20,North America,moderate,2000.0,0,no_failure,33.1,0.8
+UNIT_0405,2022-02-20,North America,light,2000.0,0,no_failure,35.9,2.5
+UNIT_0406,2022-02-20,Asia Pacific,moderate,2000.0,0,no_failure,32.2,3.7
+UNIT_0407,2022-02-20,Europe,light,2000.0,0,no_failure,35.7,0.9
+UNIT_0408,2022-02-20,Europe,heavy,2000.0,0,no_failure,18.8,1.4
+UNIT_0409,2022-02-21,Europe,heavy,890.9,1,software_fault,37.6,1.5
+UNIT_0410,2022-02-21,Europe,moderate,2000.0,0,no_failure,21.4,1.0
+UNIT_0411,2022-02-21,North America,moderate,2000.0,0,no_failure,16.4,3.9
+UNIT_0412,2022-02-21,Europe,light,2000.0,0,no_failure,17.7,2.4
+UNIT_0413,2022-02-21,North America,heavy,2000.0,0,no_failure,34.6,3.0
+UNIT_0414,2022-02-21,Europe,moderate,742.2,1,capacity_fade,33.3,1.8
+UNIT_0415,2022-02-21,North America,light,2000.0,0,no_failure,32.0,2.0
+UNIT_0416,2022-02-21,Latin America,heavy,1088.7,1,capacity_fade,35.0,1.7
+UNIT_0417,2022-02-22,Asia Pacific,light,2000.0,0,no_failure,37.1,2.9
+UNIT_0418,2022-02-22,Europe,moderate,2000.0,0,no_failure,34.1,1.9
+UNIT_0419,2022-02-22,North America,light,2000.0,0,no_failure,34.7,1.5
+UNIT_0420,2022-02-22,North America,moderate,2000.0,0,no_failure,21.3,2.8
+UNIT_0421,2022-02-22,Asia Pacific,light,2000.0,0,no_failure,27.0,3.9
+UNIT_0422,2022-02-22,Europe,light,2000.0,0,no_failure,33.0,2.8
+UNIT_0423,2022-02-22,Asia Pacific,moderate,2000.0,0,no_failure,16.0,2.8
+UNIT_0424,2022-02-22,Asia Pacific,heavy,2000.0,0,no_failure,17.9,3.3
+UNIT_0425,2022-02-23,Europe,light,2000.0,0,no_failure,22.5,3.4
+UNIT_0426,2022-02-23,Europe,moderate,2000.0,0,no_failure,29.3,2.7
+UNIT_0427,2022-02-23,Europe,moderate,1123.4,1,connector_failure,20.1,1.2
+UNIT_0428,2022-02-23,Europe,heavy,2000.0,0,no_failure,15.3,3.9
+UNIT_0429,2022-02-23,Europe,light,2000.0,0,no_failure,21.9,3.7
+UNIT_0430,2022-02-23,Asia Pacific,moderate,2000.0,0,no_failure,29.1,2.9
+UNIT_0431,2022-02-23,North America,heavy,2000.0,0,no_failure,18.0,0.8
+UNIT_0432,2022-02-23,North America,light,2000.0,0,no_failure,15.2,3.0
+UNIT_0433,2022-02-24,North America,moderate,2000.0,0,no_failure,27.7,3.3
+UNIT_0434,2022-02-24,Latin America,heavy,2000.0,0,no_failure,16.1,2.7
+UNIT_0435,2022-02-24,Europe,light,2000.0,0,no_failure,22.0,3.6
+UNIT_0436,2022-02-24,North America,moderate,2000.0,0,no_failure,18.8,3.5
+UNIT_0437,2022-02-24,Europe,light,2000.0,0,no_failure,17.3,3.1
+UNIT_0438,2022-02-24,Europe,heavy,1347.2,1,capacity_fade,21.0,3.5
+UNIT_0439,2022-02-24,Asia Pacific,heavy,1080.0,1,capacity_fade,32.0,1.9
+UNIT_0440,2022-02-24,Latin America,moderate,1884.4,1,capacity_fade,33.3,2.7
+UNIT_0441,2022-02-25,Asia Pacific,moderate,2000.0,0,no_failure,17.2,2.1
+UNIT_0442,2022-02-25,Asia Pacific,moderate,2000.0,0,no_failure,21.1,1.1
+UNIT_0443,2022-02-25,North America,light,2000.0,0,no_failure,22.7,1.1
+UNIT_0444,2022-02-25,North America,light,2000.0,0,no_failure,26.1,2.6
+UNIT_0445,2022-02-25,Europe,light,2000.0,0,no_failure,29.0,2.4
+UNIT_0446,2022-02-25,Europe,light,2000.0,0,no_failure,24.5,3.2
+UNIT_0447,2022-02-25,North America,moderate,2000.0,0,no_failure,28.3,3.7
+UNIT_0448,2022-02-25,Asia Pacific,light,2000.0,0,no_failure,31.4,3.6
+UNIT_0449,2022-02-26,North America,light,2000.0,0,no_failure,19.8,1.2
+UNIT_0450,2022-02-26,North America,moderate,2000.0,0,no_failure,37.9,2.2
+UNIT_0451,2022-02-26,North America,light,2000.0,0,no_failure,27.4,0.7
+UNIT_0452,2022-02-26,Asia Pacific,light,2000.0,0,no_failure,18.4,0.6
+UNIT_0453,2022-02-26,Asia Pacific,light,2000.0,0,no_failure,22.5,1.1
+UNIT_0454,2022-02-26,Europe,light,2000.0,0,no_failure,22.4,1.9
+UNIT_0455,2022-02-26,Asia Pacific,moderate,2000.0,0,no_failure,15.1,2.9
+UNIT_0456,2022-02-26,Asia Pacific,moderate,1622.0,1,capacity_fade,19.4,1.7
+UNIT_0457,2022-02-27,North America,heavy,1153.0,1,capacity_fade,20.6,0.7
+UNIT_0458,2022-02-27,Asia Pacific,moderate,2000.0,0,no_failure,22.0,0.8
+UNIT_0459,2022-02-27,North America,moderate,2000.0,0,no_failure,17.8,3.2
+UNIT_0460,2022-02-27,Europe,heavy,712.6,1,connector_failure,36.7,1.1
+UNIT_0461,2022-02-27,North America,moderate,2000.0,0,no_failure,28.8,3.9
+UNIT_0462,2022-02-27,Europe,moderate,2000.0,0,no_failure,29.9,1.0
+UNIT_0463,2022-02-27,Europe,moderate,2000.0,0,no_failure,20.8,2.6
+UNIT_0464,2022-02-27,North America,light,2000.0,0,no_failure,27.1,1.3
+UNIT_0465,2022-02-28,Europe,light,2000.0,0,no_failure,32.2,3.5
+UNIT_0466,2022-02-28,Europe,light,2000.0,0,no_failure,25.6,2.8
+UNIT_0467,2022-02-28,Europe,moderate,674.7,1,unknown,29.2,2.0
+UNIT_0468,2022-02-28,North America,light,2000.0,0,no_failure,32.4,3.4
+UNIT_0469,2022-02-28,North America,moderate,2000.0,0,no_failure,26.7,1.8
+UNIT_0470,2022-02-28,North America,heavy,2000.0,0,no_failure,29.6,2.4
+UNIT_0471,2022-02-28,Asia Pacific,moderate,2000.0,0,no_failure,29.5,3.0
+UNIT_0472,2022-02-28,Asia Pacific,light,2000.0,0,no_failure,35.1,3.5
+UNIT_0473,2022-03-01,North America,moderate,2000.0,0,no_failure,18.9,2.5
+UNIT_0474,2022-03-01,Asia Pacific,light,2000.0,0,no_failure,27.0,3.6
+UNIT_0475,2022-03-01,Europe,heavy,874.2,1,capacity_fade,34.9,3.8
+UNIT_0476,2022-03-01,Latin America,moderate,2000.0,0,no_failure,19.4,2.0
+UNIT_0477,2022-03-01,North America,moderate,2000.0,0,no_failure,27.0,1.5
+UNIT_0478,2022-03-01,Europe,moderate,2000.0,0,no_failure,30.1,2.7
+UNIT_0479,2022-03-01,Europe,moderate,2000.0,0,no_failure,23.7,1.7
+UNIT_0480,2022-03-01,North America,moderate,2000.0,0,no_failure,36.9,1.9
+UNIT_0481,2022-03-02,North America,light,2000.0,0,no_failure,27.0,3.6
+UNIT_0482,2022-03-02,North America,light,2000.0,0,no_failure,25.0,3.4
+UNIT_0483,2022-03-02,Europe,light,2000.0,0,no_failure,28.7,1.9
+UNIT_0484,2022-03-02,Europe,moderate,2000.0,0,no_failure,31.6,0.5
+UNIT_0485,2022-03-02,Asia Pacific,heavy,2000.0,0,no_failure,31.2,2.5
+UNIT_0486,2022-03-02,North America,moderate,2000.0,0,no_failure,18.4,2.7
+UNIT_0487,2022-03-02,Asia Pacific,moderate,2000.0,0,no_failure,34.8,1.4
+UNIT_0488,2022-03-02,North America,heavy,2000.0,0,no_failure,20.7,2.7
+UNIT_0489,2022-03-03,Latin America,light,1793.3,1,capacity_fade,19.0,2.6
+UNIT_0490,2022-03-03,North America,light,2000.0,0,no_failure,32.7,0.9
+UNIT_0491,2022-03-03,Asia Pacific,heavy,2000.0,0,no_failure,28.7,0.6
+UNIT_0492,2022-03-03,Latin America,heavy,548.3,1,capacity_fade,29.0,3.9
+UNIT_0493,2022-03-03,Asia Pacific,moderate,1468.2,1,thermal_issue,30.9,2.8
+UNIT_0494,2022-03-03,Asia Pacific,light,2000.0,0,no_failure,37.2,2.3
+UNIT_0495,2022-03-03,North America,heavy,2000.0,0,no_failure,21.0,3.3
+UNIT_0496,2022-03-03,Asia Pacific,moderate,2000.0,0,no_failure,35.9,1.6
+UNIT_0497,2022-03-04,Europe,moderate,2000.0,0,no_failure,17.2,2.9
+UNIT_0498,2022-03-04,Europe,light,2000.0,0,no_failure,30.1,1.9
+UNIT_0499,2022-03-04,Latin America,moderate,479.4,1,capacity_fade,16.0,2.0
+UNIT_0500,2022-03-04,North America,heavy,2000.0,0,no_failure,32.0,3.3
